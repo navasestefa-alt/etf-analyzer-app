@@ -1,0 +1,16 @@
+ticker,name,group,category,notes
+VTI,Vanguard Total Stock Market ETF,Core,US Equity,Broad US market.
+VOO,Vanguard S&P 500 ETF,Core,US Large Cap,Large-cap US benchmark.
+QQQ,Invesco QQQ Trust,Core,US Growth / Tech-heavy,Nasdaq-100 heavy growth.
+VXUS,Vanguard Total International Stock ETF,Core,International,Broad ex-US.
+VUG,Vanguard Growth ETF,Style,US Growth,Growth tilt.
+VTV,Vanguard Value ETF,Style,US Value,Value tilt.
+AVUV,Avantis U.S. Small Cap Value ETF,Style,Small Value,Small/value factor.
+SCHD,Schwab Dividend ETF,Style,Dividend,Dividend tilt.
+XLK,Tech Sector SPDR,Sector,Technology,US tech sector.
+XLF,Financial Sector SPDR,Sector,Financials,US financials.
+XLE,Energy Sector SPDR,Sector,Energy,US energy.
+XLV,Health Care SPDR,Sector,Healthcare,Healthcare sector.
+BND,Vanguard Total Bond Market,Bonds,Aggregate,Broad bonds.
+IEF,7-10Y Treasury ETF,Bonds,Treasury,Intermediate treasuries.
+GLD,SPDR Gold Shares,Alternative,Gold,Gold exposure.
