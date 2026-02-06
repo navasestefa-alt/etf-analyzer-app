@@ -123,9 +123,17 @@ risk = st.sidebar.selectbox("Perfil de riesgo (para la explicación)", ["Conserv
 horizon = st.sidebar.slider("Horizonte (años) — para la explicación", min_value=1, max_value=10, value=2)
 
 tickers = sorted(universe["ticker"].unique().tolist())
+
 st.sidebar.divider()
-st.sidebar.subheader("📄 Universo")
-st.sidebar.write(f"ETFs cargados: **{len(universe)}**")
+st.sidebar.subheader("➕ Agregar cualquier ETF")
+st.sidebar.caption("Escribe tickers separados por coma. Ej: VOO, IVV, QQQ, XLF, IWM")
+
+user_input = st.sidebar.text_input("Tickers adicionales")
+extra = []
+if user_input.strip():
+    extra = [x.strip().upper() for x in user_input.split(",") if x.strip()]
+tickers = sorted(list(set(tickers + extra)))
+
 
 with st.spinner("Descargando precios…"):
     prices = get_prices(tickers, period=period)
